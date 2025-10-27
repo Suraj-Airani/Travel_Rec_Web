@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>TravelGuide</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="recommendations.html" class="nav-link active">Recommendations</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Travel Recommendations</h1>
+                <p>Discover amazing destinations tailored to your preferences</p>
+            </div>
+        </section>
+
+        <section class="recommendations-section">
+            <div class="container">
+                <div class="recommendation-filters">
+                    <button class="filter-btn active" data-filter="all">All Destinations</button>
+                    <button class="filter-btn" data-filter="beach">Beaches</button>
+                    <button class="filter-btn" data-filter="temple">Temples</button>
+                    <button class="filter-btn" data-filter="country">Countries</button>
+                </div>
+
+                <!-- Beach Recommendations -->
+                <div class="recommendation-category" id="beach-section">
+                    <h2>🏖️ Beach Destinations</h2>
+                    <div class="recommendations-grid">
+                        <div class="recommendation-card beach" data-category="beach">
+                            <div class="card-images">
+                                <div class="image-container">
+                                    <div class="placeholder-image beach-img">
+                                        <p>Maldives Beach View</p>
+                                    </div>
+                                </div>
+                                <div class="image-container">
+                                    <div class="placeholder-image beach-img">
+                                        <p>Maldives Resort</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Maldives</h3>
+                                <div class="location">🌍 Indian Ocean</div>
+                                <p class="description">
+                                    Experience paradise on Earth with crystal-clear turquoise waters, pristine white sand beaches, 
+                                    and luxurious overwater bungalows. The Maldives offers world-class diving, snorkeling, and 
+                                    the ultimate tropical getaway with stunning coral reefs and marine life.
+                                </p>
+                                <div class="highlights">
+                                    <h4>Highlights:</h4>
+                                    <ul>
+                                        <li>Overwater villa experiences</li>
+                                        <li>World-class diving and snorkeling</li>
+                                        <li>Pristine coral reefs</li>
+                                        <li>Luxury spa treatments</li>
+                                    </ul>
+                                </div>
+                                <div class="best-time">
+                                    <strong>Best Time to Visit:</strong> November to April
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recommendation-card beach" data-category="beach">
+                            <div class="card-images">
+                                <div class="image-container">
+                                    <div class="placeholder-image beach-img">
+                                        <p>Santorini Sunset</p>
+                                    </div>
+                                </div>
+                                <div class="image-container">
+                                    <div class="placeholder-image beach-img">
+                                        <p>Santorini Beaches</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Santorini, Greece</h3>
+                                <div class="location">🌍 Mediterranean Sea</div>
+                                <p class="description">
+                                    Discover the magic of Santorini with its iconic blue-domed churches, dramatic cliff-side villages, 
+                                    and breathtaking sunsets. This Greek island paradise combines volcanic beaches with rich history, 
+                                    excellent cuisine, and some of the world's most romantic scenery.
+                                </p>
+                                <div class="highlights">
+                                    <h4>Highlights:</h4>
+                                    <ul>
+                                        <li>Spectacular sunset views in Oia</li>
+                                        <li>Unique volcanic black sand beaches</li>
+                                        <li>Traditional Cycladic architecture</li>
+                                        <li>World-renowned local wines</li>
+                                    </ul>
+                                </div>
+                                <div class="best-time">
+                                    <strong>Best Time to Visit:</strong> April to October
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Temple Recommendations -->
+                <div class="recommendation-category" id="temple-section">
+                    <h2>🏛️ Sacred Temples</h2>
+                    <div class="recommendations-grid">
+                        <div class="recommendation-card temple" data-category="temple">
+                            <div class="card-images">
+                                <div class="image-container">
+                                    <div class="placeholder-image temple-img">
+                                        <p>Angkor Wat Sunrise</p>
+                                    </div>
+                                </div>
+                                <div class="image-container">
+                                    <div class="placeholder-image temple-img">
+                                        <p>Angkor Wat Complex</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Angkor Wat, Cambodia</h3>
+                                <div class="location">🌍 Siem Reap, Cambodia</div>
+                                <p class="description">
+                                    Step into history at the world's largest religious monument. Angkor Wat, a UNESCO World Heritage site, 
+                                    showcases the pinnacle of Khmer architecture with its intricate carvings, massive stone structures, 
+                                    and spiritual significance spanning over 800 years of history.
+                                </p>
+                                <div class="highlights">
+                                    <h4>Highlights:</h4>
+                                    <ul>
+                                        <li>Spectacular sunrise views</li>
+                                        <li>Intricate bas-relief carvings</li>
+                                        <li>Ancient Khmer architecture</li>
+                                        <li>Rich cultural and spiritual history</li>
+                                    </ul>
+                                </div>
+                                <div class="best-time">
+                                    <strong>Best Time to Visit:</strong> November to March
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recommendation-card temple" data-category="temple">
+                            <div class="card-images">
+                                <div class="image-container">
+                                    <div class="placeholder-image temple-img">
+                                        <p>Golden Temple Day</p>
+                                    </div>
+                                </div>
+                                <div class="image-container">
+                                    <div class="placeholder-image temple-img">
+                                        <p>Golden Temple Night</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Golden Temple, India</h3>
+                                <div class="location">🌍 Amritsar, Punjab, India</div>
+                                <p class="description">
+                                    Experience the spiritual heart of Sikhism at the magnificent Golden Temple. This sacred gurdwara, 
+                                    covered in gold leaf and surrounded by a holy pool, welcomes visitors of all faiths with its 
+                                    serene atmosphere, beautiful architecture, and the world's largest free kitchen.
+                                </p>
+                                <div class="highlights">
+                                    <h4>Highlights:</h4>
+                                    <ul>
+                                        <li>Stunning golden architecture</li>
+                                        <li>Sacred Amrit Sarovar (holy pool)</li>
+                                        <li>Free community kitchen (Langar)</li>
+                                        <li>Peaceful spiritual atmosphere</li>
+                                    </ul>
+                                </div>
+                                <div class="best-time">
+                                    <strong>Best Time to Visit:</strong> October to March
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Country Recommendations -->
+                <div class="recommendation-category" id="country-section">
+                    <h2>🌍 Country Destinations</h2>
+                    <div class="recommendations-grid">
+                        <div class="recommendation-card country" data-category="country">
+                            <div class="card-images">
+                                <div class="image-container">
+                                    <div class="placeholder-image country-img">
+                                        <p>Japan Cherry Blossoms</p>
+                                    </div>
+                                </div>
+                                <div class="image-container">
+                                    <div class="placeholder-image country-img">
+                                        <p>Tokyo Skyline</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Japan</h3>
+                                <div class="location">🌍 East Asia</div>
+                                <p class="description">
+                                    Discover the perfect blend of ancient traditions and cutting-edge modernity in Japan. From bustling 
+                                    Tokyo streets to serene Kyoto temples, from Mount Fuji's majestic beauty to delicious cuisine, 
+                                    Japan offers an unforgettable cultural experience with impeccable hospitality and unique attractions.
+                                </p>
+                                <div class="highlights">
+                                    <h4>Must-Visit Places:</h4>
+                                    <ul>
+                                        <li>Tokyo - Modern metropolis and culture</li>
+                                        <li>Kyoto - Traditional temples and gardens</li>
+                                        <li>Mount Fuji - Iconic volcanic peak</li>
+                                        <li>Osaka - Food capital and castle</li>
+                                    </ul>
+                                </div>
+                                <div class="travel-tips">
+                                    <h4>Travel Tips:</h4>
+                                    <ul>
+                                        <li>Get a JR Pass for convenient train travel</li>
+                                        <li>Learn basic Japanese phrases</li>
+                                        <li>Try local cuisine and street food</li>
+                                        <li>Respect local customs and etiquette</li>
+                                    </ul>
+                                </div>
+                                <div class="best-time">
+                                    <strong>Best Time to Visit:</strong> March-May (Spring) or September-November (Fall)
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recommendation-card country" data-category="country">
+                            <div class="card-images">
+                                <div class="image-container">
+                                    <div class="placeholder-image country-img">
+                                        <p>Iceland Northern Lights</p>
+                                    </div>
+                                </div>
+                                <div class="image-container">
+                                    <div class="placeholder-image country-img">
+                                        <p>Iceland Waterfalls</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Iceland</h3>
+                                <div class="location">🌍 Nordic Region</div>
+                                <p class="description">
+                                    Experience the land of fire and ice with Iceland's dramatic landscapes, geothermal wonders, 
+                                    and natural phenomena. From the Northern Lights to powerful waterfalls, from volcanic fields 
+                                    to glacial lagoons, Iceland offers some of the most spectacular and otherworldly scenery on Earth.
+                                </p>
+                                <div class="highlights">
+                                    <h4>Must-Visit Places:</h4>
+                                    <ul>
+                                        <li>Reykjavik - Vibrant capital city</li>
+                                        <li>Blue Lagoon - Geothermal spa</li>
+                                        <li>Golden Circle - Geysir and Gullfoss</li>
+                                        <li>Jökulsárlón - Glacier lagoon</li>
+                                    </ul>
+                                </div>
+                                <div class="travel-tips">
+                                    <h4>Travel Tips:</h4>
+                                    <ul>
+                                        <li>Rent a 4WD vehicle for Ring Road</li>
+                                        <li>Pack warm, waterproof clothing</li>
+                                        <li>Book accommodation early</li>
+                                        <li>Chase Northern Lights in winter</li>
+                                    </ul>
+                                </div>
+                                <div class="best-time">
+                                    <strong>Best Time to Visit:</strong> June-August (Summer) or September-March (Northern Lights)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TravelGuide</h3>
+                    <p>Your trusted companion for travel recommendations and memorable adventures.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="recommendations.html">Recommendations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@travelguide.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TravelGuide. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

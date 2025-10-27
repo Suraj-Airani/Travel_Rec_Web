@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendations - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>TravelGuide</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="recommendations.html" class="nav-link">Recommendations</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Your Ultimate Travel Guide</h1>
+                <p class="hero-description">
+                    Discover amazing destinations tailored to your preferences. Whether you're looking for pristine beaches, 
+                    sacred temples, or exploring new countries, we have the perfect recommendations for your next adventure.
+                </p>
+                <div class="hero-buttons">
+                    <a href="recommendations.html" class="btn btn-primary">Explore Destinations</a>
+                    <a href="about.html" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Why Choose Our Recommendations?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>🏖️ Beach Paradise</h3>
+                        <p>Discover the world's most beautiful beaches with crystal clear waters and pristine sands.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🏛️ Sacred Temples</h3>
+                        <p>Explore spiritual destinations and ancient temples rich in history and culture.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🌍 Country Guides</h3>
+                        <p>Get comprehensive travel guides for countries around the world with insider tips.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-recommendations">
+            <div class="container">
+                <h2>Quick Recommendations</h2>
+                <div class="recommendation-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="beach">Beaches</button>
+                    <button class="filter-btn" data-filter="temple">Temples</button>
+                    <button class="filter-btn" data-filter="country">Countries</button>
+                </div>
+                <div class="recommendations-preview" id="recommendationsPreview">
+                    <!-- Content will be loaded by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TravelGuide</h3>
+                    <p>Your trusted companion for travel recommendations and memorable adventures.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="recommendations.html">Recommendations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@travelguide.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TravelGuide. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

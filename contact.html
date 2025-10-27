@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Travel Recommendations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>TravelGuide</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="recommendations.html" class="nav-link">Recommendations</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch with us for personalized travel recommendations and support</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Get in Touch</h2>
+                        <p>
+                            We'd love to hear from you! Whether you have questions about our recommendations, 
+                            need help planning your trip, or want to share your travel experiences, don't hesitate to reach out.
+                        </p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <h3>📧 Email</h3>
+                                <p>info@travelguide.com</p>
+                                <p>support@travelguide.com</p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>📞 Phone</h3>
+                                <p>+1 (555) 123-4567</p>
+                                <p>Available Mon-Fri, 9 AM - 6 PM EST</p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>📍 Address</h3>
+                                <p>123 Travel Street</p>
+                                <p>Adventure City, AC 12345</p>
+                                <p>United States</p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>⏰ Response Time</h3>
+                                <p>We typically respond to emails within 24 hours</p>
+                                <p>Phone support available during business hours</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <h2>Send us a Message</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="recommendation">Travel Recommendation Request</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="destination">Interested Destination (Optional)</label>
+                                <input type="text" id="destination" name="destination" placeholder="e.g., Bali, Japan, Maldives">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Tell us about your travel interests or how we can help you..."></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Subscribe to our newsletter for travel tips and destination updates
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                        
+                        <div id="formMessage" class="form-message"></div>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <h3>How do you create personalized recommendations?</h3>
+                            <p>We analyze your preferences, travel history, and interests to suggest destinations that match your unique travel style.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Are your recommendations free?</h3>
+                            <p>Yes! All our basic travel recommendations are completely free. We also offer premium consultation services for detailed trip planning.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>How often do you update destination information?</h3>
+                            <p>We continuously update our destination database with the latest information, reviews, and travel conditions.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Can you help with booking accommodations?</h3>
+                            <p>While we provide recommendations, we partner with trusted booking platforms to help you find the best deals on hotels and activities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TravelGuide</h3>
+                    <p>Your trusted companion for travel recommendations and memorable adventures.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="recommendations.html">Recommendations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@travelguide.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TravelGuide. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
